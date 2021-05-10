@@ -39,6 +39,6 @@ app.get("/api/players/:playerName", (request, response) => {
     }
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is up on ${PORT}`)
 })
